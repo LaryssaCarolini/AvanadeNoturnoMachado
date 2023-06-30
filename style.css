@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;1,900&family=Courgette&family=Montserrat:wght@200;400&display=swap');
+
+/*
+#9E0956
+#EBD73D
+#EB268A
+#0ED1EB
+#118E9E
+*/
+
+:root{ /*variável para armazenar qualquer valor*/
+    --roxo:#6e0d40;
+    --amarelo:#EBD73D;
+    --rosa:#EB268A;
+    --azul:#0ED1EB;
+    --azulescuro:#118E9E;
+}
+
+*{
+    margin: 0;/*Espaço fora da caixa*/
+    padding: 0;/*Espaço dentro da caixa*/
+}
+
+/*Selecionar elementos: tag, #id, .class*/
+body{
+    background-color: var(--roxo);
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to top,var(--azul), var(--rosa));/*(direção, corcomeça, corquetermina)*/
+    padding-top:50px;
+    text-align:center;
+    min-height: 130px; /*Altura mínima*/
+}
+
+h1{
+    font-weight: 900; /*Peso da fonte - destaque*/
+    margin-bottom:20px;
+    /*PODE MUDAR O ESTILO*/
+}
+
+header > p{
+    color: var(--black)
+}
+
+nav{
+    background-color: var(--azul);
+    padding:10px;
+    box-shadow: -20px -10px 30px 2px; /*x,y, extensão e desfoque*/
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 5px; /*Arredondamento das vértices*/
+    transition-duration: 0.5s;/*Duração da transição para outro estado*/;
+
+}
+
+nav > a:hover{/*Adiciona um estado especial*/
+    background-color: var(--roxo);
+    color:white;
+}
+
+main{
+    background-color: white;
+    min-width: 320px;/*Largura mínima*/
+    max-width: 1000px;/*Largura máxima*/
+    margin: auto;/* Nesse contexto, utilizada para centralizar o elemento*/
+    margin-top: 5px;/*Espaçamento de um elemento a outro*/
+    padding: 10px;/*Espaçamento dentro do elemento*/
+    border-bottom-left-radius: 10px;/*Arredondamento borda inferior esquerda*/
+    border-bottom-right-radius: 10px;/*Arredondamento borda inferior direita*/
+    text-align: center;/*Alinhamento ao centro*/
+    box-shadow: 3px 3px 5px 2px;
+}
+
+main h2{
+    background-image: linear-gradient(to right,transparent, var(--azul), transparent);/*direção, cor1, cor2)*/
+    text-align:center;
+    margin:10px 0px; /*10px 0 10px 0*/
+}
+
+main p{
+    font-size:1.2em;
+    text-align:justify; /*Center, left, right, justify*/
+    text-indent: 40px;/*Espaçamento da primeira linha do parágrafo*/
+    margin:15px 0;
+}
+
+main img{
+    width:50%;
+    border: 10px double black;
+}
+
+main iframe{
+    width:80%;
+    margin-bottom: 20px;
+}
+
+figcaption{
+    font-size:12px;
+
+}
+
+aside{
+    background-color: var(--azulescuro);
+    padding: 10px;
+    border-radius:5px;
+}
+
+aside > ul{
+    list-style-position: inside;/*Coloca os marcadores da lista dentro do elemento*/
+    text-align: justify;
+}
+
+aside > h3{
+    background-color: var(--roxo);
+    padding: 10px;
+    margin: -15px -10px 0 -10px;
+    border-radius:5px 5px 0 0;
+}
+
+footer{
+    font-size:12px;
+    text-align:center;
+    padding:3px;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+main > ul > li{
+list-style-position: inside;/*Coloca os marcadores da lista dentro do elemento*/
+text-align: justify;
+}
+
+h3{
+    font-weight: 400px;
+    font-size:1.1em;
+    text-align: justify;
+    margin:20px 0;
+
+}
+
+#tituloobras{
+    background-image: linear-gradient(to right, transparent, var(--azul), transparent);
+    margin:10px;
+    text-align: center;
+    font-size:1.5em;
+
+}
+
+main > h1{
+    font-size:1.5em;
+    background-image: linear-gradient(to right, transparent, var(--azul), transparent);
+    margin-top:10px;
+}
+
+#imagens{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.imagens{
+    max-width:20%;
+    max-height:10%;
+    margin:15px 15px;
+    background-image: linear-gradient(to right, transparent, var(--azul), transparent);
+}
+
+main > div{
+    background-image: linear-gradient(to top, transparent, var(--roxo), transparent);
+}
